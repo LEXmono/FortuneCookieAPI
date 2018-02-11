@@ -27,7 +27,7 @@ def fortune():
     record = 0
     try:
         # Get count of items in DDB Table. ID == table_count
-        # Per AWS, this can take 6 hours to update. 
+        # Per AWS, this can take 6 hours to update.
         table_info = client.describe_table(
             TableName=ddb_table
         )
